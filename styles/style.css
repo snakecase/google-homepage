@@ -1,0 +1,125 @@
+*s {
+    outline: 1px dashed grey;
+}
+header *, footer * {
+    display: inline-block;
+    vertical-align: middle;
+}
+header {
+    text-align: right;
+}
+header > nav { 
+    margin: 16px 30px 0 0;
+    font-size: small;
+}
+.head-nav-text {
+    margin: -4px 1.5px 0 10.5px;
+}
+main {
+    text-align: center;
+    margin-top: 152px;
+}
+main * {
+    display: block;
+    margin: 0 auto;
+}
+main input[type="text"] {
+    width: 584px;
+    height: 42px;
+    margin: 27px 0 0 675px;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    width: 100%;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+.footer-left, .footer-right {
+    margin: 0 30px;
+}
+.footer-left > li {
+    margin: 0 26.5px 1px 0;
+}
+.footer-right > li {
+    margin: 0 0 1px 26.5px;
+}
+header ul > li {
+    margin-left: 18px;
+}
+a {
+    text-decoration: none;
+    color: #666;
+    font-family: arial,sans-serif;
+    font-size: small;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+a:active {
+    color: #dd4b39;
+}
+.options-button {
+    opacity: .55;
+    height: 16px;
+    width: 16px;
+    background-image: url('../images/options.png');
+    background-color: rgba(255, 255, 255, 0.00);
+}
+.options-button:hover {
+    opacity: .85;
+}
+.sign-button {
+    height: 30px;
+    width: 69.3438px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 12px;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    background: #4285f4;
+}
+.submit-button, .lucky-button {
+    display: inline-block;
+    margin-top: 32px;
+    height: 36px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border: 1px solid #F2F2F2;
+    border-radius: 2px;
+    color: #757575;
+    font-size: 13px;
+    border: 1px solid #F2F2F2;  
+}
+.submit-button {
+    width: 125.75px;
+}
+.submit-button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+.lucky-button {
+    width: 142px;
+    margin-left: 4px;
+}
+.lucky-button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    color: #222;
+}
+.voice-img {
+    position: absolute;
+    margin: -34px 0 0 1219px;
+    height: 24px;
+    width: 24px;
+}
