@@ -23,7 +23,7 @@ main * {
     display: block;
     margin: 0 auto;
 }
-main input[type="text"] {
+.search-bar {
     width: 568px;
     height: 42px;
     margin: 27px 0 0 675px;
@@ -33,7 +33,7 @@ main input[type="text"] {
     font-size: 16px;
     padding-left: 16px;
 }
-main input[type="text"]:hover, main input[type="text"]:focus {
+.search-bar:hover, .search-bar:focus {
     box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
     outline: none;
 }
@@ -115,10 +115,6 @@ a:active {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     color: #222;
 }
-.submit-button:focus {
-    border: 1px solid #4d90fe;
-    outline: none;    
-}
 .lucky-button {
     width: 142px;
     margin-left: 4px;
@@ -127,6 +123,10 @@ a:active {
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
     color: #222;
+}
+.submit-button:focus, .lucky-button:focus {
+    border: 1px solid #4d90fe;
+    outline: none;    
 }
 .voice-button {
     background-image: url('../images/voice.png');
