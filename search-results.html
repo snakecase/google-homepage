@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/search-results.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="scripts/dropdown.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
         </nav>
         <nav class="header-bottom">
             <ul class="header-bottom-tabs">
-                <li class="tab all-tab">
+                <li class="all-tab">
                     <a href="#">All</a>
                 </li>
                 <li class="tab videos-tab">
@@ -46,7 +47,7 @@
                 <li class="tab more-tab">
                     <a href="#">More</a>
                 </li>
-                <li class="settings-menu">
+                <li class="tab settings-menu">
                     <a href="#">Settings</a>
                 </li>
                 <li class="tools-menu">
@@ -59,23 +60,144 @@
         <p class="result-stats">About 2,340,000 results (0.28 seconds)</p>
         <div class="search-results-container">
             <article class="search-result">
-                <a href="#">
+                <a class="header" href="#">
                     <h1>With zero coding experience, artist building 180 webpages in 180 days</h1>
                 </a>
-                <address>https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-...</address>
+                <address>https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-...
+                    <a class='green-arrow' onclick="dropdown()">
+                        <ul id="dropdown" class='cached-dropdown'>
+                            <li>Cached</li>
+                            <li>Similar</li>
+                        </ul>
+                    </a>
+                </address>
                 <p>
-                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt <em>built</em>
-                    her first <em>webpage</em>. The next day, she <em>built</em> another, and she ...
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she ...
                 </p>
             </article>
             <article class="search-result">
-                <a href="#">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/
+                    <a class='green-arrow'>
+                        <span></span>
+                    </a>
+                </address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
                     <h1>Google Homepage</h1>
                 </a>
                 <address>swatikumar16.github.io/google-homepage/</address>
                 <p>
-                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt <em>built</em>
-                    her first <em>webpage</em>. The next day, she <em>built</em> another, and she .
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/</address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/</address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/</address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/</address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/</address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/</address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
+                </p>
+            </article>
+            <article class="search-result">
+                <a class="header" href="#">
+                    <h1>Google Homepage</h1>
+                </a>
+                <address>swatikumar16.github.io/google-homepage/</address>
+                <p>
+                    <time>Jul 26, 2013 -</time> 117 days ago, having never done any programming in her life, Jennifer Dewalt
+                    <em>built</em>
+                    her first
+                    <em>webpage</em>. The next day, she
+                    <em>built</em> another, and she .
                 </p>
             </article>
         </div>
@@ -84,5 +206,4 @@
 
     </footer>
 </body>
-
 </html>

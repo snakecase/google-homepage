@@ -165,7 +165,7 @@ header {
   font-family: "Roboto", arial, sans-serif;
 }
 
-.header-bottom a:hover {
+.tab a:hover {
   color: #222;
 }
 
@@ -259,7 +259,7 @@ article {
   margin-bottom: -2px;
 }
 
-.search-result > a {
+.search-result > .header {
   color: #1a0dab;
   font-size: 18px;
   font-family: 'Roboto',arial,sans-serif;
@@ -293,3 +293,41 @@ em {
   color: #6a6a6a;
   font-style: normal;
 }
+
+.green-arrow {
+  display: inline-block;
+  background-image: url('../images/green_arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 13px;
+  width: 12px;
+  position: absolute;
+  margin: 1px 0 0 4px;
+}
+
+#dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin: 8px 0 0 -2px;
+  width: 86.27px;
+  height: 62px;
+}
+.cached-dropdown li {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  color: #333;
+  padding-left: 18px;
+}
+/*.cached-dropdown li:hover {
+  display: flex;
+  background-color: #EEEEEE;
+}
+.green-arrow:active .cached-dropdown {
+  display: block;
+  transition-delay: 1s;
+}
+*/
