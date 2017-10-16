@@ -50,7 +50,7 @@ header {
 
 .voice-button {
   position: absolute;
-  background-image: url("../images/voice.png");
+  background-image: url('../images/voice.png');
   background-size: 24px;
   background-repeat: no-repeat;
   left: 552px;
@@ -93,7 +93,7 @@ header {
 .search-button {
   display: block;
   position: absolute;
-  background-image: url("../images/search_button.png");
+  background-image: url('../images/search_button.png');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -106,7 +106,7 @@ header {
   opacity: 0.55;
   height: 16px;
   width: 16px;
-  background-image: url("../images/options.png");
+  background-image: url('../images/options.png');
   background-size: 16px;
   background-color: rgba(255, 255, 255, 0);
   position: absolute;
@@ -266,10 +266,12 @@ article {
   line-height: 21.6px;
 }
 
-.search-result > address {
+.search-result address {
   font-size: 14px;
   color: #006621;
   font-family: 'Roboto',arial,sans-serif;
+  line-height: 16px;
+  margin-top: 2px;
 }
 
 time {
@@ -283,13 +285,8 @@ time {
   line-height: 18.2px;
 }
 
-.search-result address {
-  line-height: 16px;
-  margin-top: 2px;
-}
-
 em {
-  font-weight: bold;
+  font-weight: 900;
   color: #6a6a6a;
   font-style: normal;
 }
@@ -305,29 +302,76 @@ em {
   margin: 1px 0 0 4px;
 }
 
-#dropdown {
+.result-dropdown {
   display: none;
   position: absolute;
   background-color: white;
-  border: 1px solid rgba(0,0,0,0.2);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  margin: 8px 0 0 -2px;
-  width: 86.27px;
-  height: 62px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  top: 12px;
+  left: -1px;
+  width: 84.27px;
 }
-.cached-dropdown li {
+
+.result-dropdown li {
   display: flex;
   align-items: center;
   height: 50%;
+  padding: 7px 18px;
+}
+
+.result-dropdown a {
   color: #333;
-  padding-left: 18px;
 }
-/*.cached-dropdown li:hover {
-  display: flex;
-  background-color: #EEEEEE;
+
+.result-dropdown li:hover {
+  background-color: #eeeeee;
 }
-.green-arrow:active .cached-dropdown {
-  display: block;
-  transition-delay: 1s;
+
+.youtube-thumbnail {
+  display: inline-block;
+  position: relative;
+  width: 116px;
+  height: 65px;
+  background-image: url('../images/youtube_thumbnail.jpg');
+  background-position: center;
+  background-size: 116px 87px;
+  top: 5px;
+  left: 1px;
 }
-*/
+.youtube-thumb-time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: right;
+  padding: 4px 3px 5px 3px;
+  font-family: 'Roboto',arial,sans-serif;
+}
+
+.youtube-paragraph {
+  display: inline-block;
+  position: absolute;
+  margin: -2px 0 0 9px;
+  width: 490px;
+}
+
+.youtube-paragraph > p {
+  font-family: 'Roboto',arial,sans-serif;
+  font-size: small;
+  color: #545454;
+  line-height: 18.2px;
+  margin-top: 2px;
+}
+
+.youtube-result {
+  padding-bottom: 2px;
+}
+
+.messed-padding {
+  position: relative;
+  top: -2px;
+}

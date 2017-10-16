@@ -1,5 +1,5 @@
-function dropdown() {
-    var element = document.getElementById("dropdown"),
+function dropdown(num) {
+    var element = document.getElementById("result-dropdown" + num),
     style = window.getComputedStyle(element),
     display = style.getPropertyValue('display');
     if (display === "none") {
